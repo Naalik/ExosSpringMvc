@@ -15,8 +15,10 @@
     <body>
         <h1>Liste</h1>
         <c:forEach items = "${genres}" var = "genre">
-            ${genre.nom}<br/>
+            ${genre.nom}  <a href="supprimer_genre/${genre.id}">Supprimer</a>  <a href="editer_genre/${genre.id}">Editer</a><br/>
         </c:forEach>
-        
+            <br/>
+            <br/>
+             <a href="ajouter_genre">Ajouter</a>
     </body>
 </html>

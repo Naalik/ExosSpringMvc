@@ -15,4 +15,5 @@ import streaming.entity.Genre;
  */
 public interface GenreCrudService extends CrudRepository<Genre, Long>{
     public List<Genre> findAllBy();
+    public Genre findOneById(Long id);
 }
