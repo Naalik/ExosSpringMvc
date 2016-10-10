@@ -14,11 +14,11 @@
     </head>
     <body>
         <h1>Liste</h1>
-        <a href="liste_film">Films</a>
+        <a href="liste_genre">Genres</a>
         <br/>
         <br/>
-        <c:forEach items = "${genres}" var = "genre">
-            ${genre.nom}  <a href="supprimer_genre/${genre.id}">Supprimer</a>  <a href="editer_genre/${genre.id}">Editer</a><br/>
+        <c:forEach items = "${films}" var = "film">
+            ${film.titre}  <a href="supprimer_film/${film.id}">Supprimer</a>  <a href="editer_film/${film.id}">Editer</a><br/>
         </c:forEach>
         <br/>
         <br/>
